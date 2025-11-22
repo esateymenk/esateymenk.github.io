@@ -1,0 +1,346 @@
+/* -----------------------------------------------------
+   GLOBAL
+----------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #05050a;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img { user-select: none; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+
+/* Container */
+.container {
+  width: min(1250px, 90%);
+  margin: auto;
+}
+
+/* -----------------------------------------------------
+   PRELOADER
+----------------------------------------------------- */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #05050a;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-bar {
+  width: 0%;
+  height: 4px;
+  background: #4c8bff;
+  border-radius: 4px;
+  animation: load 1.5s ease forwards;
+}
+
+@keyframes load {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* -----------------------------------------------------
+   MOUSE GLOW
+----------------------------------------------------- */
+#mouseGlow {
+  position: fixed;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(80,120,255,0.4), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(30px);
+  z-index: 1;
+}
+
+/* -----------------------------------------------------
+   HEADER
+----------------------------------------------------- */
+.site-header {
+  width: 100%;
+  padding: 18px 0;
+  background: rgba(5,5,10,0.6);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  z-index: 91;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main-nav a {
+  margin-left: 25px;
+  opacity: 0.75;
+  transition: .25s;
+}
+
+.main-nav a:hover {
+  opacity: 1;
+  color: #4c8bff;
+}
+
+/* -----------------------------------------------------
+   HERO
+----------------------------------------------------- */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.particles-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+
+.hero-sub {
+  opacity: .8;
+  margin-top: 10px;
+}
+
+.hero-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn.primary {
+  background: #4c8bff;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #6ba0ff;
+}
+
+.btn.outline {
+  border: 2px solid #4c8bff;
+}
+
+.btn.outline:hover {
+  background: #4c8bff;
+  color: #fff;
+}
+
+/* CARD (HERO SIDE) */
+.glass-card {
+  padding: 25px 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* -----------------------------------------------------
+   SECTION BASE
+----------------------------------------------------- */
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.lead {
+  opacity: 0.85;
+  max-width: 800px;
+}
+
+/* -----------------------------------------------------
+   TIMELINE
+----------------------------------------------------- */
+.timeline {
+  margin-top: 50px;
+  border-left: 3px solid #4c8bff33;
+  padding-left: 35px;
+}
+
+.timeline-item {
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #4c8bff;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #4c8bff;
+}
+
+.t-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #4c8bff;
+}
+
+.t-body h4 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* -----------------------------------------------------
+   PROJECTS
+----------------------------------------------------- */
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  position: relative;
+  padding: 30px;
+  background: #0b0f1a;
+  border-radius: 18px;
+  transition: .25s;
+  overflow: hidden;
+  border: 1px solid #1a2236;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #4c8bff;
+  box-shadow: 0 0 25px #4c8bff55;
+}
+
+/* -----------------------------------------------------
+   CONTACT
+----------------------------------------------------- */
+.email-btn {
+  padding: 14px 35px;
+  background: #4c8bff;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: .25s;
+}
+
+.email-btn:hover {
+  background: #6ba0ff;
+}
+
+/* -----------------------------------------------------
+   MUSIC PLAYER
+----------------------------------------------------- */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(10,10,20,0.7);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(20px);
+  z-index: 91;
+}
+
+.music-player button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #4c8bff;
+}
+
+#mp-progress {
+  width: 120px;
+}
+
+/* -----------------------------------------------------
+   FOOTER
+----------------------------------------------------- */
+.site-footer {
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  opacity: .8;
+}
+
+/* -----------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+@media (max-width: 850px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 45px;
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Esat Eymen Karaaslan</title>
+  <meta name="description" content="Esat Eymen Karaaslan | Developed by Esat Eymen Karaaslan" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER (Apple style blue bar) -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-bar" id="loaderBar"></div>
+  </div>
+
+  <!-- MOUSE GLOW -->
+  <div id="mouseGlow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="dosyalar/logo.png" alt="Logo" id="logoImg" onerror="this.style.display='none'">
+        <span class="brand-name">Esat Eymen Karaaslan</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Ana menü">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <!-- particles canvas -->
+    <canvas id="particlesCanvas" class="particles-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-inner container" data-parallax>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span id="typedName" aria-live="polite"></span>
+          <span class="caret" aria-hidden="true">|</span>
+        </h1>
+        <p class="hero-sub">Web Sitesi Tasarımcısı</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects" id="viewProjects">Projeleri Gör</a>
+          <a class="btn outline" href="#contact">İletişime Geç</a>
+        </div>
+      </div>
+
+      <div class="hero-card glass-card fade-in">
+        <p class="card-title">Bildiğim yazılım dilleri</p>
+        <p class="card-text">HTML, CSS, JS, Node.JS, Python</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (with timeline) -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title fade-in">Hakkımda</h2>
+      <p class="lead fade-in">
+        Ben <strong>Esat Eymen Karaaslan</strong>. 16 yaşındayım ve yazılım dünyasında özellikle Web Tasarımı üzerinde çalışıyorum. Kullandığım teknolojiler ve yaklaşımlar: Node.js, Discord.js, HTML, CSS, JavaScript, Python.
+      </p>
+
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="t-year">2022</div>
+          <div class="t-body">
+            <h4>İlk Kod Deneyimi & öğrenme</h4>
+            <p>Botları tanıdığım, temel komutlar ve basit yönetim araçları geliştirdiğim dönem.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-year">2025</div>
+          <div class="t-body">
+            <h4>E-Ticaret Sitesi</h4>
+            <p>Yüksek kaliteli e-ticaret sitesi.</p>
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="t-year">2025</div>
+          <div class="t-body">
+            <h4>Portfolyo ve Yeni Projeler Zemini</h4>
+            <p>Bu portfolyo ve daha gelişmiş projeler.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (neon border) -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title fade-in">Projelerim</h2>
+      <p class="section-sub fade-in">Yapmış olduğum bazı projeler;</p>
+
+      <div class="projects-grid">
+        <article class="project-card neon-card fade-in">
+          <div class="project-content">
+            <h3>Discord Müzik Botu</h3>
+            <p>Yüksek kaliteli ses, playlist, buton - slash komutlu ve stabil performans.</p>
+          </div>
+        </article>
+
+        <article class="project-card neon-card fade-in">
+          <div class="project-content">
+            <h3>Discord FIFA Botu (Eğlence)</h3>
+            <p>Eğlence komutları, mini oyunlar ve eğlenceli etkileşimler.</p>
+          </div>
+        </article>
+
+        <article class="project-card neon-card fade-in">
+          <div class="project-content">
+            <h3>Discord Gelişmiş Moderasyon Botu</h3>
+            <p>Otomatik moderasyon, rol yönetimi ve güvenlik araçları.</p>
+          </div>
+        </article>
+
+        <article class="project-card neon-card fade-in">
+          <div class="project-content">
+            <h3>Kişisel Portfolyo</h3>
+            <p>Bu site — ultra-lüks, performans odaklı portfolyo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title fade-in">İletişim</h2>
+      <p class="lead fade-in">Bir proje fikri ya da soru varsa bana ulaşabilirsin.
+</p>
+
+      <div class="contact-actions fade-in">
+        <button class="email-btn" id="emailBtn" type="button" aria-label="E-posta gönder"
+                onclick="location.href='mailto:esateymenkrsln44@outlook.com'">
+          E-posta Gönder
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC PLAYER -->
+  <div class="music-player" aria-label="Arkaplan müziği kontrolü">
+    <audio id="bgAudio" src="dosyalar/sarki1.mp3" preload="metadata" loop></audio>
+    <button id="playBtn" class="mp-play" aria-label="Oynat / Durdur">▶</button>
+    <div class="mp-meta">
+      <span id="mp-current">0:00</span>
+      <input id="mp-progress" type="range" min="0" max="100" value="0" aria-label="İlerleme çubuğu">
+      <span id="mp-duration">0:00</span>
+    </div>
+    <button id="mp-mute" class="mp-mute" aria-label="Ses aç/kapa">🔊</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Esat Eymen Karaaslan — Developed by Esat Eymen Karaaslan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
