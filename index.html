@@ -4,13 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Esat Eymen Karaaslan</title>
-  <meta name="description" content="Esat Eymen Karaaslan | Developed by Esat Eymen Karaaslan" />
+  <meta name="description" content="Esat Eymen Karaaslan | Developed by Esat Eymen Karaaslan">
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- PRELOADER (Apple style blue bar) -->
+  <!-- PRELOADER -->
   <div id="preloader" aria-hidden="true">
     <div class="loader-bar" id="loaderBar"></div>
   </div>
@@ -22,7 +24,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="dosyalar/logo2.png" alt="Logo" id="logoImg" onerror="this.style.display='none'">
+        <img src="dosyalar/logo.png" alt="Logo" id="logoImg" onerror="this.style.display='none'">
         <span class="brand-name">Esat Eymen Karaaslan</span>
       </div>
 
@@ -37,19 +39,18 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <!-- particles canvas -->
     <canvas id="particlesCanvas" class="particles-canvas" aria-hidden="true"></canvas>
 
-    <div class="hero-inner container" data-parallax>
+    <div class="hero-inner container">
       <div class="hero-text">
         <h1 class="hero-title">
-          <span id="typedName" aria-live="polite"></span>
-          <span class="caret" aria-hidden="true">|</span>
+          <span id="typedName"></span>
+          <span class="caret">|</span>
         </h1>
         <p class="hero-sub">Web Sitesi Tasarımcısı</p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#projects" id="viewProjects">Projeleri Gör</a>
+          <a class="btn primary" href="#projects">Projeleri Gör</a>
           <a class="btn outline" href="#contact">İletişime Geç</a>
         </div>
       </div>
@@ -61,20 +62,23 @@
     </div>
   </section>
 
-  <!-- ABOUT (with timeline) -->
+  <!-- ABOUT -->
   <section id="about" class="about section">
     <div class="container">
       <h2 class="section-title fade-in">Hakkımda</h2>
+
       <p class="lead fade-in">
-        Ben <strong>Esat Eymen Karaaslan</strong>. 16 yaşındayım ve yazılım dünyasında özellikle Web Tasarımı üzerinde çalışıyorum. Kullandığım teknolojiler ve yaklaşımlar: Node.js, Discord.js, HTML, CSS, JavaScript, Python.
+        Ben <strong>Esat Eymen Karaaslan</strong>. 16 yaşındayım ve yazılım dünyasında özellikle Web Tasarımı üzerinde çalışıyorum. 
+        Kullandığım teknolojiler: Node.js, Discord.js, HTML, CSS, JavaScript, Python.
       </p>
 
       <div class="timeline fade-in">
+
         <div class="timeline-item">
           <div class="t-year">2022</div>
           <div class="t-body">
             <h4>İlk Kod Deneyimi & öğrenme</h4>
-            <p>Botları tanıdığım, temel komutlar ve basit yönetim araçları geliştirdiğim dönem.</p>
+            <p>Temel komutlar ve basit bot geliştirme süreci.</p>
           </div>
         </div>
 
@@ -82,56 +86,50 @@
           <div class="t-year">2025</div>
           <div class="t-body">
             <h4>E-Ticaret Sitesi</h4>
-            <p>Yüksek kaliteli e-ticaret sitesi.</p>
+            <p>Profesyonel e-ticaret platformu geliştirme.</p>
           </div>
         </div>
-
 
         <div class="timeline-item">
           <div class="t-year">2025</div>
           <div class="t-body">
-            <h4>Portfolyo ve Yeni Projeler Zemini</h4>
-            <p>Bu portfolyo ve daha gelişmiş projeler.</p>
+            <h4>Portfolyo & Yeni Projeler</h4>
+            <p>Bu portfolyo ve yeni gelişmiş projeler.</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS (neon border) -->
+  <!-- PROJECTS -->
   <section id="projects" class="projects section">
     <div class="container">
       <h2 class="section-title fade-in">Projelerim</h2>
       <p class="section-sub fade-in">Yapmış olduğum bazı projeler;</p>
 
       <div class="projects-grid">
+
         <article class="project-card neon-card fade-in">
-          <div class="project-content">
-            <h3>Discord Müzik Botu</h3>
-            <p>Yüksek kaliteli ses, playlist, buton - slash komutlu ve stabil performans.</p>
-          </div>
+          <h3>Discord Müzik Botu</h3>
+          <p>Buton - slash komutlu yüksek kaliteli müzik botu.</p>
         </article>
 
         <article class="project-card neon-card fade-in">
-          <div class="project-content">
-            <h3>Discord FIFA Botu (Eğlence)</h3>
-            <p>Eğlence komutları, mini oyunlar ve eğlenceli etkileşimler.</p>
-          </div>
+          <h3>Discord FIFA Botu</h3>
+          <p>Eğlence tabanlı mini oyun sistemi.</p>
         </article>
 
         <article class="project-card neon-card fade-in">
-          <div class="project-content">
-            <h3>Discord Gelişmiş Moderasyon Botu</h3>
-            <p>Otomatik moderasyon, rol yönetimi ve güvenlik araçları.</p>
-          </div>
+          <h3>Gelişmiş Moderasyon Botu</h3>
+          <p>Rol yönetimi, otomatik güvenlik sistemleri.</p>
         </article>
 
         <article class="project-card neon-card fade-in">
-          <div class="project-content">
-            <h3>Kişisel Portfolyo</h3>
-            <p>Bu site — ultra-lüks, performans odaklı portfolyo.</p>
-          </div>
+          <h3>Kişisel Portfolyo</h3>
+          <p>Bu modern ve hızlı portfolyo.</p>
         </article>
+
       </div>
     </div>
   </section>
@@ -140,28 +138,29 @@
   <section id="contact" class="contact section">
     <div class="container">
       <h2 class="section-title fade-in">İletişim</h2>
-      <p class="lead fade-in">Bir proje fikri ya da soru varsa bana ulaşabilirsin.
-</p>
+      <p class="lead fade-in">Bir proje fikrin varsa bana ulaşabilirsin.</p>
 
       <div class="contact-actions fade-in">
-        <button class="email-btn" id="emailBtn" type="button" aria-label="E-posta gönder"
-                onclick="location.href='mailto:esateymenkrsln44@outlook.com'">
+        <a href="mailto:esateymenkrsln44@outlook.com" class="email-btn" aria-label="E-posta gönder">
           E-posta Gönder
-        </button>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- MUSIC PLAYER -->
-  <div class="music-player" aria-label="Arkaplan müziği kontrolü">
-    <audio id="bgAudio" src="dosyalar/sarki1.mp3" preload="metadata" loop></audio>
-    <button id="playBtn" class="mp-play" aria-label="Oynat / Durdur">▶</button>
+  <div class="music-player">
+    <audio id="bgAudio" src="sarki1.mp3" preload="metadata" loop></audio>
+
+    <button id="playBtn" class="mp-play">▶</button>
+
     <div class="mp-meta">
       <span id="mp-current">0:00</span>
-      <input id="mp-progress" type="range" min="0" max="100" value="0" aria-label="İlerleme çubuğu">
+      <input id="mp-progress" type="range" min="0" max="100" value="0">
       <span id="mp-duration">0:00</span>
     </div>
-    <button id="mp-mute" class="mp-mute" aria-label="Ses aç/kapa">🔊</button>
+
+    <button id="mp-mute" class="mp-mute">🔊</button>
   </div>
 
   <!-- FOOTER -->
@@ -174,9 +173,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
